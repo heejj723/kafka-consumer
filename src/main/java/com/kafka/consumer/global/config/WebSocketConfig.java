@@ -23,6 +23,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     config.setApplicationDestinationPrefixes("/pub");
     // 이 경로로 SimpleBroker 를 등록한다.
     // 해당 경로를 Subscribe 하는 클라이언트들에게 메시지를 전달한다.
-    config.enableSimpleBroker("/topic", "queue");
+    config.enableSimpleBroker("/sub");
   }
 }
